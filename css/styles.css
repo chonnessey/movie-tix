@@ -5,20 +5,39 @@ body {
 
 .container {
   background-color: rgb(242, 250, 224);
+  border: solid black;
 }
 
 .jumbotron {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYzgHFxSJR_I_WN3JAjB3MidVLe8muKDP3w&usqp=CAU); 
+  color: black;
 }
 
+.background-pic {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYzgHFxSJR_I_WN3JAjB3MidVLe8muKDP3w&usqp=CAU);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  overflow: auto;
+}
 h1 {
   font-size: 60px;
   text-decoration: underline; 
-  color: white;
+  color:black;
 }
-.background-pic { background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYzgHFxSJR_I_WN3JAjB3MidVLe8muKDP3w&usqp=CAU); color: white;
-
-}
+/* .background-pic { 
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYzgHFxSJR_I_WN3JAjB3MidVLe8muKDP3w&usqp=CAU); color: white;
+  background-repeat: no-repeat; 
+  object-fit: cover;
+} */
 
 #result {
   text-align: center;
@@ -28,3 +47,4 @@ h1 {
 .btn-success {
   width: 100%;
 }
+
