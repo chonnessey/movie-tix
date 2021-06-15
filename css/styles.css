@@ -1,0 +1,30 @@
+body {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+
+.container {
+  background-color: rgb(242, 250, 224);
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-decoration: underline; 
+  color: white;
+}
+.background-pic { background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYzgHFxSJR_I_WN3JAjB3MidVLe8muKDP3w&usqp=CAU); color: white;
+
+}
+
+#result {
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn-success {
+  width: 100%;
+}

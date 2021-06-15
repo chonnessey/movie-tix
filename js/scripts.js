@@ -33,9 +33,6 @@ Ticket.prototype.calculatePrice = function() {
   return this.price;
 };
 
-// let kidsAge = new Ticket(17, "evening", 3)
-// kidsAge.calculatePrice()
-
 // UI logic
 
 $(document).ready(function() {
@@ -50,12 +47,5 @@ $(document).ready(function() {
     newTicket.calculatePrice(); //calls the function
     console.log(newTicket)
     $("#result").text(`You're ticket price is $${newTicket.price} dollar(s) . Enjoy the show!`)
-    // const ticketKeys = Object.keys(newTicket);
-    // let newTicketString = "";
-    // ticketKeys.forEach(function(key) {
-    //   newTicketString = newTicketString.concat(key + ":" + "<li>"+ newTicket[key] + "</li>" );
-    // });
-    // $("#result").append( newTicketString );
-
   });
 })
