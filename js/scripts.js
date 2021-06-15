@@ -1,18 +1,19 @@
 
 // Business Logic
 
-function Ticket(age, time) {
+function Ticket(age, time, movie) {
   this.age = age;
   this.timeOfDay = time;
+  this.movie = movie;
   this.price = 0;
 }
 
 
-Ticket.prototype.calculateAgePrice = function() {
+Ticket.prototype.calculatePrice = function() {
   let age = this.age
   let time = this.timeOfDay
+  let movie = this.movie
   if (age < 12) {
-    console.log("inside works!");
     this.price += 10;
   } else if (age >= 12 && age < 65) {
       this.price += 15;
@@ -24,12 +25,17 @@ Ticket.prototype.calculateAgePrice = function() {
   } else if (time === "evening") {
     this.price += 4
   }
+  if (movie < 3) {
+    this.price -= 2
+  } else if (movie >= 3) {
+    this.price += 2
+  }
   return this.price;
 };
 
 // console.log(this.price)
-let kidsAge = new Ticket(11, "evening")
-kidsAge.calculateAgePrice()
+let kidsAge = new Ticket(17, "evening", 3)
+kidsAge.calculatePrice()
 
 // UI logic
 
