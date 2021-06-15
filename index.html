@@ -14,25 +14,39 @@
       <br>
       <p><em>Queterintino</em> Movie Marathon</p>
     </div>
-    <div class="card-body">
-      <div class="form-group">
-        <lable for="movie">Choose Your Movie</lable>
-        <select id="movie" class="form-control">
-          <option selected disabled value="">Choose Movie</option>
-          <option value="1">Resivour Dogs</option>
-          <option value="2">Pulp Fiction</option>
-          <option value="3">Kill Bill Vol 1</option>
-          <option value="4">Django Unchained</option>
-          <option value="5">Inglorious Bastards</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <lable for="age">Age</lable>
-        <input type="text" class="form-control" id="age" placeholder="enter age">
-      </div>
-    </div>
+    <form id="movie-form">
+      <div class="card-body">
+        <div class="form-group">
+          <lable for="movie">Choose Your Movie</lable>
+          <select id="movie" class="form-control">
+            <option selected disabled value="">Choose Movie</option>
+            <option value="1">Resivour Dogs</option>
+            <option value="2">Pulp Fiction</option>
+            <option value="3">Kill Bill Vol 1</option>
+            <option value="4">Django Unchained</option>
+            <option value="5">Inglorious Bastards</option>
+          </select>
+        </div>
 
+        <div class="form-group">
+          <lable for="age">Age</lable>
+          <input type="text" class="form-control" id="age" placeholder="enter age">
+        </div>
+
+        <div class="form-group">
+          <lable for="time-of-day">Time of Day</lable>
+          <select id="time-of-day" class="form-control">
+            <option select disabled value="">Choose a time of day</option>
+            <option value="matinee">Matinee</option>
+            <option value="evening">Evening</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-success btn-lg">Find my price!</button>
+      </div>
+    </form>  
   </div>
 </body>
 </html>
+
 
