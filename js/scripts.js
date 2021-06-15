@@ -49,6 +49,13 @@ $(document).ready(function() {
     
     newTicket.calculatePrice(); //calls the function
     console.log(newTicket)
-    $("#result").text(newTicket.price)
+    $("#result").text(`You're ticket price is $${newTicket.price} dollar(s) . Enjoy the show!`)
+    // const ticketKeys = Object.keys(newTicket);
+    // let newTicketString = "";
+    // ticketKeys.forEach(function(key) {
+    //   newTicketString = newTicketString.concat(key + ":" + "<li>"+ newTicket[key] + "</li>" );
+    // });
+    // $("#result").append( newTicketString );
+
   });
 })
