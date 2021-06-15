@@ -33,10 +33,22 @@ Ticket.prototype.calculatePrice = function() {
   return this.price;
 };
 
-// console.log(this.price)
-let kidsAge = new Ticket(17, "evening", 3)
-kidsAge.calculatePrice()
+// let kidsAge = new Ticket(17, "evening", 3)
+// kidsAge.calculatePrice()
 
 // UI logic
 
-
+$(document).ready(function() {
+  $("#movie-form").submit(function(event) {
+    event.preventDefault();
+    const movieInput = parseInt($("select#movie").val());
+    const ageInput = parseInt($("input#age").val());
+    const timeOfDayInput = $("select#time-of-day").val();
+    
+    let newTicket = new Ticket(ageInput, timeOfDayInput, movieInput);
+    
+    newTicket.calculatePrice(); //calls the function
+    console.log(newTicket)
+    $("#result").text(newTicket.price)
+  });
+})
